@@ -4,17 +4,17 @@ namespace tabuleiro
 {
     internal class Posicao
     {
-        public int lina { get; set; }
+        public int linha { get; set; }
         public int coluna { get; set; }
-        public Posicao(int lina, int coluna)
+        public Posicao(int linha, int coluna)
         {
-            this.lina = lina;
+            this.linha = linha;
             this.coluna = coluna;
         }
 
         public override string ToString()
         {
-            return lina + "," + coluna;
+            return linha + "," + coluna;
         }
     }
 }
