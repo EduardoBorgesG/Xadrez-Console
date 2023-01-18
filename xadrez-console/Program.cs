@@ -3,14 +3,12 @@ using xadrez_console;
 using xadrez;
 try
 {
-    Tabuleiro tab = new Tabuleiro(8, 8);
-    tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-    tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
-    tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 10));
-
-
-    Tela.imprimirTabuleiro(tab);
-
+    PosicaoXadrez pos = new PosicaoXadrez('a', 1);
+    PosicaoXadrez pos1 = new PosicaoXadrez('c', 7);
+    PosicaoXadrez pos2 = new PosicaoXadrez('a', 1);
+    PosicaoXadrez pos3 = new PosicaoXadrez('a', 1);
+    Console.WriteLine(pos.toPosicao());
+    Console.WriteLine(pos1.toPosicao());
     Console.ReadLine();
 }
 catch (TabuleiroException e)
